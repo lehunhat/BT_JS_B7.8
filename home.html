@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <h3>BT JS B7,8</h3>
+   
+      <div class="container">
+        <!-- BT 1 -->
+        <form>
+            <div>
+                <input type="number" class="form-control form__input" id="inputNum" placeholder="Nhập số n">
+            </div>
+            <div class="container_button">
+                <button class="btn btn-primary" type="button" onclick="getNumber()">Thêm
+                    số</button>
+            </div>
+            <div class="alert alert-success" role="alert">
+                👉<span id="txtArray"></span>
+            </div>
+        </form>
+
+        <p>Câu 1:</p>
+
+        <form>
+
+          <div>
+              <button class="btn btn-primary" type="button" onclick="sumPositive()">Tính tổng</button>
+          </div>
+          <div class="alert alert-success" role="alert">
+              👉<span id="txtSum"></span>
+          </div>
+      </form>
+
+        <p>Câu 2:</p>
+
+        <form>
+
+          <div>
+              <button class="btn btn-primary" type="button" onclick="countPositive()">Đếm số</button>
+          </div>
+          <div class="alert alert-success" role="alert">
+              👉<span id="txtCount"></span>
+          </div>
+      </form>
+      <form>
+
+        <p>Câu 3:</p>
+
+        <div>
+            <button class="btn btn-primary" type="button" onclick="findMin()">Tìm số nhỏ nhất</button>
+        </div>
+        <div class="alert alert-success" role="alert">
+            👉<span id="txtMin"></span>
+        </div>
+    </form>
+    <form>
+
+      <p>Câu 4:</p>
+
+      <div>
+          <button class="btn btn-primary" type="button" onclick="findMinPos()">Tìm số dương nhỏ nhất</button>
+      </div>
+      <div class="alert alert-success" role="alert">
+          👉<span id="txtMinPos"></span>
+      </div>
+  </form>
+
+  <p>Câu 5:</p>
+
+  <form>
+
+    <div>
+        <button class="btn btn-primary" type="button" onclick="findEven()">Tìm số chẵn</button>
+    </div>
+    <div class="alert alert-success" role="alert">
+        👉<span id="txtEven"></span>
+    </div>
+</form>
+
+<p>Câu 6:</p>
+
+<form>
+  <div>
+      <input type="number" class="form-control form__input" id="inputIndex1" placeholder="Nhập số vị trí 1">
+  </div>
+  <div>
+      <input type="number" class="form-control form__input" id="inputIndex2" placeholder="Nhập số vị trí 2">
+  </div>
+  <div class="col-12">
+      <button class="btn btn-primary" type="button" onclick="changePosition()">Đổi chỗ</button>
+  </div>
+  <div class="alert alert-success" role="alert">
+      👉<span id="txtChangePos"></span>
+  </div>
+</form>
+
+<p>Câu 7:</p>
+
+<form>                                               
+  <div>
+      <button class="btn btn-primary" type="button" onclick="sortIncrease()">Sắp xếp</button>
+  </div>
+  <div class="alert alert-success" role="alert">
+      👉<span id="txtIncrease"></span>
+  </div>
+</form>
+
+<p>Câu 8:</p>
+
+<form>                                               
+  <div class="col-12">
+      <button class="btn btn-primary" type="button" onclick="findPrime()">Tìm số nguyên tố</button>
+  </div>
+  <div class="alert alert-success" role="alert">
+      👉<span id="txtPrime"></span>
+  </div>
+</form>
+
+<p>Câu 9</p>
+
+<form">
+  <div>
+      <input type="number" class="form-control form__input" id="inputFloat" placeholder="Nhập số">
+  </div>
+  <div>
+      <button class="btn btn-primary" type="button" onclick="getFloat()">Thêm
+          số</button>
+  </div>
+  <div class="alert alert-success" role="alert">
+      👉<span id="txtArrayFloat"></span>
+  </div> 
+  <div>
+      <button class="btn btn-primary" type="button" onclick="findInt()">Đếm số nguyên</button>
+  </div>
+  <div class="alert alert-success" role="alert">
+      👉<span id="txtInt"></span>
+  </div>
+</form>
+
+<p>Câu 10</p>
+
+<form>                                               
+  <div>
+      <button class="btn btn-primary" type="button" onclick="compareNum()">So sánh</button>
+  </div>
+  <div class="alert alert-success" role="alert">
+      👉<span id="txtCompare"></span>
+  </div>
+</form>
+
+      </div>
+      <script src="./home.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
